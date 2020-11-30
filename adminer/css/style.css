@@ -1,0 +1,496 @@
+/* Шрифты */
+
+@font-face{
+	font-family:montserrat;
+    src:url("/fonts/montserrat.woff");
+}
+
+/* Общие */
+
+body{
+	margin: 0px;
+}
+div{
+	box-sizing:border-box;
+	font-family:montserrat;
+	user-select:none;
+}
+a{
+	display:block;
+	border:1px #888 solid;
+}
+p{
+	margin:0px;
+	font-family:montserrat;
+	user-select:none;
+}
+
+/* Стили шапки */
+
+#leftlogo{
+	position:fixed;
+	height:40px;
+	width:300px;
+	background-color:#404040;
+	z-index:10;
+}
+
+#header{
+	position:fixed;
+	height:40px;
+	left:300px;
+	right:0px;
+	background: linear-gradient(to top, #5FD2B5, #35D2AB);
+	z-index:10;
+}
+
+/* Стили бокового меню */
+
+#leftmenu{
+	position:fixed;
+	top:40px;
+	bottom:0px;
+	width:300px;
+	background-color:#404040;
+	z-index:10;
+}
+
+.select-menu{
+	padding:10px;
+	height:40px;
+	border:0px;
+	color:#FFF;
+	cursor:pointer;
+}
+.select-menu:hover{
+	background-color: #1F7C65;
+}
+
+.select-menu-choosed{
+	background: linear-gradient(to top, #5FD2B5, #35D2AB);
+	box-shadow: 0px 4px 4px 0px #000;
+	color:#000;
+}
+
+/* Стили контента */
+
+#content{
+	display:flex;
+	padding:20px;
+	flex-wrap: wrap;
+	position:absolute;
+	top:40px;
+	left:300px;
+	right:0px;
+}
+
+/* Стили всплывающих меню*/
+
+.swim{
+	position:fixed;
+	width:300px;
+	top:50%;
+	left:50%;
+
+	padding:5px;
+	background:linear-gradient(to top, #E0E0E0, #A0A0A0);
+	box-shadow: 0px 4px 4px 0px #888;
+	z-index:10;
+}
+
+.swim p{
+	position:relative;
+	margin-bottom:5px;
+	width:100%;
+}
+
+.swim input{
+	position:absolute;
+	right:0px;
+}
+
+.swim button{
+	height:20px;
+	border:0px #000 solid;
+	cursor:pointer;
+	display:inline-block;
+	margin-right:5px;
+	position:relative;
+	background-color:#000;
+	color:#FFF;
+}
+
+.swim button:hover{
+	background-color:#444;
+}
+
+/* Стили меню статей */
+
+.article{
+	position:relative;
+	margin:20px;
+	width:200px;
+	height:200px;
+	box-shadow: 0px 4px 4px 0px #888;
+	background: linear-gradient(to top, #E0E0E0, #A0A0A0);
+	cursor:pointer;
+}
+
+.article:hover{
+	background: linear-gradient(to top, #C0C0C0, #808080);
+}
+
+.article p{
+	display:block;
+	text-align:center;
+	position:absolute;
+	top:85px;
+	width:200px;
+	font-size:20px;
+}
+
+.deleteArticle{
+	font-size:20px;
+	border:0px #000 solid;
+	cursor:pointer;
+	display:block;
+	position:absolute;
+	right:0px;
+	background-color:#000;
+	color:#FFF;
+}
+
+.deleteArticle:hover{
+	background-color:#444;
+}
+
+#plus_article{
+	padding-top:35px;
+	margin:20px;
+	width:200px;
+	height:200px;
+	box-shadow: 0px 4px 4px 0px #888;
+	background: linear-gradient(to top, #5FD2B5, #00A67C);
+	cursor:pointer;
+}
+
+#plus_article:hover{
+	background: linear-gradient(to top, #00A67C, #006C51);
+}
+
+#plus_article p{
+	text-align:center;
+	font-size:100px;
+}
+
+/* Стили выбранной статьи*/
+
+#article{
+	position:relative;
+	margin:20px;
+	width:100%;
+	box-shadow: 0px 4px 4px 0px #888;
+	background: linear-gradient(to top, #E0E0E0, #A0A0A0);
+}
+
+#article p{
+	margin:5px;
+	height:20px;
+	display:block;
+	position:relative;
+	width:300px;
+}
+#article p input{
+	position:absolute;
+	right:0px;
+}
+
+#article button{
+	height:20px;
+	border:0px #000 solid;
+	margin:5px;
+	cursor:pointer;
+	display:block;
+	position:absolute;
+	right:0px;
+	background-color:#000;
+	color:#FFF;
+}
+
+#article button:hover{
+	background-color:#444;
+}
+
+#saveArticle{
+	top:0px;
+}
+#closeArticle{
+	top:25px;
+}
+
+#contentText{
+	display:block;
+	position:relative;
+	left:0px;
+	width:100%;
+	height:1000px;
+	box-sizing: border-box;
+	border:0px;
+	resize:none;
+	font-size:16px;
+}
+
+/* Стили меню картинок*/
+
+.image{
+	margin:20px;
+	position:relative;
+	width:200px;
+	height:200px;
+	cursor:pointer;
+	box-shadow: 0px 4px 4px 0px #000;
+	background: linear-gradient(to top, #E0E0E0, #888);
+}
+
+.image:hover{
+	background: linear-gradient(to top, #AAA, #444);
+}
+
+.image img{
+	display:block;
+	width:200px;
+	height:160px;
+}
+
+.image p{
+	display:block;
+	margin:10px;
+	text-align:center;
+}
+
+.deleteImage{
+	font-size:20px;
+	border:0px #000 solid;
+	cursor:pointer;
+	display:block;
+	position:absolute;
+	top:0px;
+	right:0px;
+	background-color:#000;
+	color:#FFF;
+}
+
+.deleteImage:hover{
+	background-color:#444;
+}
+
+#image_inputs{
+	width:100%;
+	margin:20px;
+	padding:10px;
+	background:linear-gradient(to top, #E0E0E0, #C0C0C0);
+	box-shadow: 0px 4px 4px 0px #000;
+}
+
+#choose_file_div{
+	position:relative;
+	overflow:visible;
+	width:100%;
+	height:50px;
+	cursor:pointer;
+}
+
+.choose_file_div{
+	background:linear-gradient(to top, #5FD2B5, #35D2AB);
+	border:2px #000 solid;
+	cursor:pointer;
+}
+
+#choose_file_div p{
+	pointer-events: none;
+}
+
+.choose_file_div_hover{
+	background:linear-gradient(to top, #00A67C, #006C51);
+	color:#FFF;
+	border:2px #FFF solid;
+}
+
+#choose_file_div:hover{
+	background:linear-gradient(to top, #00A67C, #006C51);
+	color:#FFF;
+	border:2px #FFF solid;
+}
+
+#choose_file_div p{
+	position:absolute;
+	margin-top:13px;
+	top:0px;
+	left:0px;
+	width:100%;
+	text-align:center;
+}
+
+#choose_file{
+	position:relative;
+	left:0;
+	top:0;
+	width:inherit;
+	height:inherit;
+	opacity:0;
+	cursor:pointer;
+}
+
+#upload{
+	position:relative;
+	font-size:20px;
+	border:0px #000 solid;
+	cursor:pointer;
+	display:block;
+	margin-top:10px;
+	top:0px;
+	right:0px;
+	background-color:#000;
+	color:#FFF;
+}
+
+#upload:hover{
+	background-color:#444;
+}
+
+/* Стили управления меню */
+
+#menuForUser{
+	margin:20px;
+	padding:10px;
+	position:relative;
+	width:100%;
+	box-shadow: 0px 4px 4px 0px #000;
+	background: linear-gradient(to top, #E0E0E0, #AAA);
+}
+
+#menuForUser div{
+	position:relative;
+	width:100%;
+	color:#FFF;
+}
+
+#menuForUser .catalog{
+	box-shadow: 0px 2px 4px 2px #000;
+	z-index:2;
+	margin:5px 0px;
+	padding:10px;
+}
+
+#menuForUser .catalog-choose{
+	height:30px;
+	background-color:#888;
+	cursor:pointer;
+}
+
+#menuForUser .catalog-choose:hover{
+	background-color:#666;
+}
+
+#menuForUser .file{
+	height:30px;
+	background-color:#5FD2B5;
+	color:#000;
+	cursor:pointer;
+}
+
+#menuForUser .file:hover{
+	background-color:#00A67C;
+}
+
+#menuForUser button{
+	font-size:20px;
+	border:0px #000 solid;
+	cursor:pointer;
+	display:block;
+	height:30px;
+	background-color:#000;
+	color:#FFF;
+}
+
+#menuForUser button:hover{
+	background-color:#444;
+}
+
+.rename{
+	position:absolute;
+	top:0px;
+	right:30px;
+}
+
+.minus{
+	position:absolute;
+	top:0px;
+	right:0px;
+	width:30px;
+}
+
+#menuForUser .plusFile{
+	position:relative;
+	display:inline-block;
+}
+
+#menuForUser .plusCatalog{
+	position:relative;
+	display:inline-block;
+}
+
+#saveMenu{
+	font-size:20px;
+	border:0px #000 solid;
+	cursor:pointer;
+	display:block;
+	height:30px;
+	background-color:#000;
+	color:#FFF;
+	margin:20px;
+}
+
+#saveMenu:hover{
+	background-color:#444;
+}
+
+/* Стили управления доступом */
+
+#enter_inputs{
+	margin:20px;
+	padding:10px;
+	position:relative;
+	width:100%;
+	box-shadow: 0px 4px 4px 0px #000;
+	background: linear-gradient(to top, #E0E0E0, #AAA);
+}
+
+#enter_inputs p{
+	margin:5px;
+	height:20px;
+	display:block;
+	position:relative;
+	width:300px;
+}
+
+#enter_inputs p input{
+	position:absolute;
+	right:0px;
+}
+
+#enter{
+	height:30px;
+	font-size:20px;
+	border:0px #000 solid;
+	margin:20px 5px 0px 0px;
+	cursor:pointer;
+	display:block;
+	position:relative;
+	background-color:#000;
+	color:#FFF;
+}
+
+#enter:hover{
+	background-color:#444;
+}

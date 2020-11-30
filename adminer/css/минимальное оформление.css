@@ -1,0 +1,85 @@
+body{
+	margin: 0px;
+}
+div{
+	border:2px #000 solid;
+	box-sizing:border-box;
+}
+a{
+	display:block;
+	border:1px #888 solid;
+}
+
+/* Стили шапки */
+
+#leftlogo{
+	position:absolute;
+	height:30px;
+	width:300px;
+}
+
+#header{
+	position:absolute;
+	height:30px;
+	left:300px;
+	right:0px;
+}
+
+/* Стили бокового меню */
+
+#leftmenu{
+	position:absolute;
+	top:30px;
+	width:300px;
+}
+
+.select-menu-choosed{
+	background-color:#CCC;
+}
+
+/* Стили контента */
+
+#content{
+	position:absolute;
+	top:30px;
+	left:300px;
+	right:0px;
+	2height:100px;
+}
+
+/* Стили всплывающих меню*/
+
+.swim{
+	position:absolute;
+	background-color:#FFF;
+}
+
+/* Стили меню картинок*/
+
+#choose_file_div{
+	position:relative;
+	overflow:visible;
+	width:300px;
+	height:50px;
+}
+
+.choose_file_div_hover{
+	border:5px #000 solid;
+}
+
+.choose_file_div{
+	border:1px #000 solid;
+}
+
+#choose_file_div:hover{
+	border:5px #000 solid;
+}
+
+#choose_file{
+	position:relative;
+	left:0;
+	top:0;
+	width:inherit;
+	height:inherit;
+	opacity:0.3;
+}
